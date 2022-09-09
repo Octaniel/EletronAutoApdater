@@ -1,12 +1,12 @@
 {
   "name": "electron-quick-start",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "build": "electron-builder build --win --publish never",
-    "deploy": "electron-builder build --win --publish always"
+    "deploy": "electron-builder build --linux --publish always"
   },
   "repository": "https://github.com/Octaniel/EletronAutoApdater",
   "keywords": [
@@ -19,7 +19,8 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^20.1.1"
+    "electron": "^20.1.1",
+    "electron-builder": "^23.3.3"
   },
   "dependencies": {
     "electron-updater": "^5.2.1"
